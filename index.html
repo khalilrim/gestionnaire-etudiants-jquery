@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire Étudiants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Gestion des Étudiants</h1>
+      <p class="subtitle">Mini-application jQuery — Projet intégrateur</p>
+    </header>
+
+    
+    <section class="card" id="formulaire-section">
+      <h2>Ajouter un étudiant</h2>
+      <div id="formulaire">
+        <div class="field-group">
+          <label for="nom">Nom de l'étudiant</label>
+          <input type="text" id="nom" placeholder="Ex: Alice Dupont">
+        </div>
+        <div class="field-group">
+          <label for="note">Note /20</label>
+          <input type="number" id="note" placeholder="Note entre 0 et 20" min="0" max="20">
+        </div>
+        <button id="btn-ajouter">Ajouter</button>
+      </div>
+      <p id="erreur" style="color:red; display:none;"></p>
+    </section>
+
+    <section class="card" id="stats-section">
+      <h2>Statistiques</h2>
+      <div id="stats">
+        <p>Aucun étudiant enregistré.</p>
+      </div>
+    </section>
+
+    <section class="card" id="liste-section">
+      <div class="liste-header">
+        <h2>Liste des étudiants</h2>
+        <button id="btn-effacer-tout">Tout effacer</button>
+      </div>
+      <ul id="liste-etudiants"></ul>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
