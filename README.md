@@ -34,7 +34,7 @@ Mini-application réalisée avec HTML, CSS, JavaScript et jQuery permettant de g
 
 Projet déployé via GitHub Pages.
 
-Lien Github Pages: 
+Lien Github Pages: https://khalilrim.github.io/gestionnaire-etudiants-jquery/
 
 ## Instructions de test
 
